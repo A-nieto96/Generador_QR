@@ -15,18 +15,6 @@ La aplicación genera el QR en tiempo real y permite descargarlo en formato **PN
 
 ---
 
-## Estructura del Proyecto
-
-|---app.py
-|---requirements.txt
-|---README.md
-|---static/
-|  -->styles.css
-|---templates/
-|  -->index.html
-
-
-
 ## Tecnologías usadas
 
 -Python 3
