@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de QR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Generador de Código QR</h1>
+    <form action="/generate" method="POST">
+        <label for="data">Pega la URL aqui:</label>
+        <input type="text" id="data" name="data" placeholder="https://ejemplo.com" required>
+        <button type="submit">Generar QR</button>
+    </form>
+    <p class="note">
+        Escribe cualquier texto, número o URL y se generará un QR descargable.
+    </p>
+</div>
+</body>
+</html>
