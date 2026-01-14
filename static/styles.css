@@ -2,11 +2,13 @@ body {
     font-family: Arial, sans-serif;
     background: #0f172a;
     color: #e5e7eb;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 1rem;
 }
 
 .container {
@@ -58,4 +60,27 @@ button:hover {
     font-size: 0.85rem;
     color: #9ca3af;
     text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    input[type="text"],
+    button {
+        font-size: 0.9rem;
+    }
+
+    .note {
+        font-size: 0.8rem;
+    }
 }
